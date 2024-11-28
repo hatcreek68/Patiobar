@@ -39,7 +39,7 @@ We assume that you've installed Patiobar to your users home directory!
 4. Select a station, if one isn't already playing or configured to auto-play
 5. Start Patiobar: `cd Patiobar && node index.js`
 6. Browse to the IP address or hostname of the machine running pianobar /
-   Patiobar on port 3000.  e.g. http://192.168.1.2:3000/
+   Patiobar on port 3000.  e.g. http://192.168.1.2:8001/
 
 Support
 -------

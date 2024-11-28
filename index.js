@@ -5,7 +5,7 @@ var io = require('socket.io')(server);
 var fs = require('fs');
 
 var fifo = process.env.PIANOBAR_FIFO || 'ctl';
-var listenPort = process.env.PATIOBAR_PORT || 3000;
+var listenPort = process.env.PATIOBAR_PORT || 8001;
 
 server.listen(listenPort);
 
