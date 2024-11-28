@@ -44,8 +44,6 @@ We assume that you've installed Patiobar to your users home directory!
 Support
 -------
 
-If something doesn't work, please open a
-[github issue](https://github.com/kylejohnson/Patiobar/issues).
 
  
  *Changes:

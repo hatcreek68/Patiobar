@@ -2,7 +2,7 @@
 set -euo pipefail
 
 tls_fingerprint=`openssl s_client -connect tuner.pandora.com:443 < /dev/null 2> /dev/null | openssl x509 -noout -fingerprint | tr -d ':' | cut -d'=' -f2`
-repo='https://github.com/kylejohnson/Patiobar.git'
+repo='https://github.com/hatcreek68/Patiobar.git'
 clone_path="$HOME/Patiobar"
 event_command=${clone_path}/eventcmd.sh
 fifo=${clone_path}/ctl
