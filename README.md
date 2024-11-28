@@ -49,6 +49,6 @@ If something doesn't work, please open a
 
  
  *Changes:
-	- I suspected nginx proxy manager interfered with port 3000, so forked/testing using port 8001
-	- Add audio player to index.html; can toggle between hidden or displayed audio player code
-	- Reduce the max size the of the repsonive thumbnail (@.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;width:100% \9;max-width:60%)
+ - I suspected nginx proxy manager interfered with port 3000, so forked/testing using port 8001
+ - Add audio player to index.html; can toggle between hidden or displayed audio player code
+ - Reduce the max size the of the repsonive thumbnail (@.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;width:100% \9;max-width:60%)
