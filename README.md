@@ -3,7 +3,7 @@ Patiobar
 
 ![Frontend Screenshot](http://i.imgur.com/XyNO2qTl.png)
 
-A web frontend for pianobar, which is a CLI frontend for Pandora.
+A (modified*) web frontend for pianobar, which is a CLI frontend for Pandora.
 
 Provides a simple way for controlling what is playing on the radio.
 I use this to allow guests (and myself) to control the music playing
@@ -20,10 +20,10 @@ A great way to control Pandora / Pianobar on a Raspberry Pi
 Install
 -------
 Either
-`curl -s https://raw.githubusercontent.com/kylejohnson/Patiobar/master/install.sh | bash`
+`curl -s https://raw.githubusercontent.com/hatcreek68/Patiobar/master/install.sh | bash`
 or 
 ```bash
-git clone https://github.com/kylejohnson/Patiobar.git
+git clone https://github.com/hatcreek68/Patiobar.git
 cd Patiobar
 bash install.sh
 ```
@@ -39,10 +39,16 @@ We assume that you've installed Patiobar to your users home directory!
 4. Select a station, if one isn't already playing or configured to auto-play
 5. Start Patiobar: `cd Patiobar && node index.js`
 6. Browse to the IP address or hostname of the machine running pianobar /
-   Patiobar on port 3000.  e.g. http://192.168.1.2:8001/
+   Patiobar on port 8001.  e.g. http://192.168.1.2:8001/
 
 Support
 -------
 
 If something doesn't work, please open a
 [github issue](https://github.com/kylejohnson/Patiobar/issues).
+
+ 
+ *Changes:
+	- I suspected nginx proxy manager interfered with port 3000, so forked/testing using port 8001
+	- Add audio player to index.html; can toggle between hidden or displayed audio player code
+	- Reduce the max size the of the repsonive thumbnail (@.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;width:100% \9;max-width:60%)
